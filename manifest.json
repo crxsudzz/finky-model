@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "id": "finance-functiongemma",
+  "version": "0.2.0-rc.1",
+  "format": "functiongemma-v1",
+  "min_app_build": 3,
+  "bytes": 291557824,
+  "sha256": "f43bac11359d1dae0ca793e08e22b6262e4d5c06a613443b990aa70c35bb1a7a",
+  "url": "https://github.com/crxsudzz/finky-model/releases/download/v0.2.0-rc.1/finance-functiongemma-q8_0.gguf"
+}
