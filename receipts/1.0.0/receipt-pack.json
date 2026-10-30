@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "receipt-recognition",
+  "version": "1.0.0",
+  "min_reader": 1,
+  "rules": [
+    {
+      "field": "amount",
+      "label": "Total paid",
+      "position": "same_or_below",
+      "priority": 2
+    },
+    {
+      "field": "amount",
+      "label": "Amount sent",
+      "position": "same_or_below",
+      "priority": 1
+    },
+    {
+      "field": "amount",
+      "label": "Amount transferred",
+      "position": "same_or_below",
+      "priority": 1
+    },
+    {
+      "field": "merchant",
+      "label": "Payment to",
+      "position": "same_or_below",
+      "priority": 1
+    },
+    {
+      "field": "merchant",
+      "label": "Paid to",
+      "position": "same_or_below",
+      "priority": 1
+    },
+    {
+      "field": "date",
+      "label": "Transaction date",
+      "position": "same_or_below",
+      "priority": 1
+    },
+    {
+      "field": "source",
+      "label": "Paid using",
+      "position": "same_or_below",
+      "priority": 1
+    },
+    {
+      "field": "source",
+      "label": "Payment method",
+      "position": "same_or_below",
+      "priority": 1
+    },
+    {
+      "field": "destination",
+      "label": "Transfer to",
+      "position": "same_or_below",
+      "priority": 1
+    },
+    {
+      "field": "status",
+      "label": "Awaiting settlement",
+      "position": "same_line",
+      "priority": 1,
+      "value": "pending"
+    }
+  ]
+}

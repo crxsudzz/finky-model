@@ -24,3 +24,10 @@ By using or redistributing this model, you agree to the included Gemma Terms (`G
 
 Upstream terms: https://ai.google.dev/gemma/terms
 Upstream prohibited uses: https://ai.google.dev/gemma/prohibited_use_policy
+
+
+## Receipt recognition packs
+
+Receipt definitions are versioned separately from Finky model weights. They contain generic literal labels, relative text positions and field mappings only. They contain no executable scripts, bank/account catalog, receipts or user financial data. The app performs OCR, resolves enrolled accounts locally, validates values and requires explicit confirmation before saving.
+
+`receipt-manifest.json` advertises the signed pack. Release tags use `receipts-v1.0.0` (the pack version); the asset is `receipt-pack.json`. Initial source is in `receipts/1.0.0/`. Publish the release asset before updating the manifest so every advertised version is available. App readers verify compatibility, size, SHA-256 and the Ed25519 signature; they keep offline defaults on any failure. The publisher's private key is not stored in this repository.
